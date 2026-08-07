@@ -1,0 +1,21 @@
+# Core model loading and generation (Phase 1)
+torch>=2.1.0
+transformers>=4.40.0
+accelerate>=0.27.0
+huggingface_hub>=0.20.0
+
+# Mechanistic interpretability / attention extraction (Phase 3)
+transformer_lens>=1.14.0
+
+# Data analysis and statistics (Phase 4)
+numpy>=1.24.0
+scipy>=1.11.0
+statsmodels>=0.14.0
+scikit-learn>=1.3.0
+
+# Visualization (Phase 4, figures)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities (all phases)
+tqdm>=4.65.0
