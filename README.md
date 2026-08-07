@@ -1,11 +1,8 @@
-# attention-pivot-analysis
-Do attention heads distinguish genuine self-correction from hallucinated pivots in LLMs? A tested-and-non-replicating negative result.
-
 # Attention Pivot Analysis
 
 Can attention head activations distinguish a genuine self-correction from a hallucinated one, before a language model finishes its answer? We built a pipeline to test this and report what we found — including a result that looked promising at first and did not survive replication.
 
-**Paper:** [link to be added]
+**Paper:** in preparation — link coming soon
 **Status:** negative / non-replicating result — see [Key Finding](#key-finding) below
 
 ---
@@ -33,32 +30,24 @@ attention-pivot-analysis/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
-├── notebooks/
-│   ├── 01_data_generation.ipynb       # Phase 1 — generate CoT traces, detect pivots
-│   ├── 02_pivot_labeling.ipynb        # Phase 2 — token alignment + correction/hallucination labels
-│   ├── 03_attention_extraction.ipynb  # Phase 3 — TransformerLens attention extraction
-│   └── 04_hypothesis_testing.ipynb    # Phase 4 — permutation tests + classifier + ablations
-├── data/
-│   ├── phase2_labeled_combined.jsonl  # 155 labeled pivot instances
-│   └── phase4_results.json            # summary statistics from all analyses
 └── figures/
     └── (figures used in the paper)
 ```
 
-Large intermediate files (raw generations, extracted attention tensors, ~850 MB) are hosted separately — see [Data](#data) below.
+All code (as runnable Kaggle notebooks) and all data are hosted on Kaggle — this repo is the landing page, paper, and figures. See [Pipeline & Notebooks](#pipeline--notebooks) and [Data](#data) below.
 
 ---
 
-## Pipeline
+## Pipeline & Notebooks
 
-| Phase | Notebook | Input → Output |
+| Phase | Kaggle Notebook | Input → Output |
 |---|---|---|
-| 1. Data Generation | `01_data_generation.ipynb` | Prompt set → raw CoT generations (Qwen2.5-1.5B-Instruct) |
-| 2. Pivot Labeling | `02_pivot_labeling.ipynb` | Raw generations → token-aligned, labeled pivot instances |
-| 3. Attention Extraction | `03_attention_extraction.ipynb` | Labeled pivots → per-head attention weights & output magnitudes |
-| 4. Hypothesis Testing | `04_hypothesis_testing.ipynb` | Attention tensors → permutation tests, classifier, cross-domain ablation |
+| 1. Data Generation | [kaggle.com/code/gunjalgupta/phase-1-v2](https://www.kaggle.com/code/gunjalgupta/phase-1-v2) | Prompt set → raw CoT generations (Qwen2.5-1.5B-Instruct) |
+| 2. Pivot Labeling | [kaggle.com/code/gunjalgupta/phase-2](https://www.kaggle.com/code/gunjalgupta/phase-2) | Raw generations → token-aligned, labeled pivot instances |
+| 3. Attention Extraction | [kaggle.com/code/gunjalgupta/phase3-v2](https://www.kaggle.com/code/gunjalgupta/phase3-v2) | Labeled pivots → per-head attention weights & output magnitudes (run twice: n=82 and n=134) |
+| 4. Hypothesis Testing | [kaggle.com/code/gunjalgupta/phase-4](https://www.kaggle.com/code/gunjalgupta/phase-4) | Attention tensors → permutation tests, classifier, cross-domain ablation |
 
-Each notebook is runnable independently given its documented input file; see the markdown cell at the top of each for exact requirements.
+Each notebook documents its exact input path and requirements in its first markdown cell. Click "Copy & Edit" on Kaggle to fork and rerun with your own compute, or "Code" → download `.ipynb` to run elsewhere (see [Reproducing Elsewhere](#reproducing-elsewhere) below).
 
 **Model:** [Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 **Interpretability library:** [TransformerLens](https://github.com/TransformerLensOrg/TransformerLens)
@@ -81,44 +70,44 @@ Full hypothesis-by-hypothesis breakdown, fold-level detail, and figures are in t
 
 ---
 
-## Reproducing
+## Reproducing Elsewhere
+
+The fastest way to reproduce is forking the notebooks directly on Kaggle (see [Pipeline & Notebooks](#pipeline--notebooks) — "Copy & Edit" preserves the GPU environment and dataset attachments automatically).
+
+To run outside Kaggle (locally, Colab, another cloud):
 
 ```bash
-git clone https://github.com/<your-username>/attention-pivot-analysis.git
-cd attention-pivot-analysis
 pip install -r requirements.txt
 ```
 
-Run notebooks in order (`01` → `04`). Each expects the previous notebook's output as input — update the input path at the top of each notebook if your files live somewhere other than the default `data/` location.
+Download each notebook's `.ipynb` from its Kaggle page, then download its input data from the previous notebook's Output tab (see [Data](#data) above) and update the hardcoded `/kaggle/input/...` paths at the top of each notebook to point at your local copy.
 
-**Note:** Notebooks were developed on Kaggle and use `kaggle_secrets` for API tokens. If running elsewhere (Colab, local), replace the secrets-loading cell with your own token-handling method — **never hardcode API tokens directly in the notebook.**
+**Note:** Notebooks use `kaggle_secrets` for API tokens, which only exists in Kaggle's environment. If running elsewhere, replace the secrets-loading cell with your own token-handling method — **never hardcode API tokens directly in the notebook.**
 
 ---
 
 ## Data
 
-| File | Size | Location |
+All data files are available from the **Output tab** of the notebook that produced them (Kaggle sidebar → Output, on each notebook linked above). No separate dataset pages — everything traces back to one of the four notebooks.
+
+| File | Produced by | Size |
 |---|---|---|
-| `phase2_labeled_combined.jsonl` | ~30 KB | in this repo, `data/` |
-| `phase4_results.json` | ~5 KB | in this repo, `data/` |
-| Raw generations (`raw_outputs*.jsonl`) | ~15 MB | [Kaggle Dataset link — to be added] |
-| Extracted attention tensors (`phase3_attention_v3.npz`) | ~850 MB | [Kaggle Dataset / HuggingFace Dataset link — to be added] |
+| `raw_outputs.jsonl`, `raw_outputs_batch2.jsonl` | Phase 1 notebook, Output tab | small |
+| `pivot_candidates.jsonl`, `pivot_candidates_batch2.jsonl` | Phase 1 notebook, Output tab | small |
+| `phase2_labeled_combined.jsonl` (155 records — the master labeled dataset used in all downstream analysis) | Phase 2 notebook, Output tab | ~0.3 MB |
+| `phase3_attention_v2.npz` + `phase3_metadata_v2.jsonl` (n=82 attention tensors) | Phase 3 notebook, Output tab (first run) | ~550 MB |
+| `phase3_attention_v3.npz` + `phase3_metadata_v3.jsonl` (n=134 attention tensors) | Phase 3 notebook, Output tab (second run) | ~857 MB |
+| `phase4_results.json` (summary statistics behind every table in the paper) | Phase 4 notebook, Output tab | ~5 KB |
+
+**Note:** both attention tensor files (n=82 and n=134) are needed to reproduce the paper's central finding — the n=82 result is not superseded by n=134, since the whole point of the paper is the comparison between them.
+
+Field-level schema for the labeled JSONL files is documented in the paper, Section 3.2, and in the first markdown cell of the Phase 2 notebook.
 
 ---
 
 ## Citation
 
-If you use this pipeline or dataset, please cite:
-
-```bibtex
-@misc{yourname2026attentionpivot,
-  title  = {Can Attention Heads Distinguish Genuine Self-Correction from Hallucinated Pivots in LLMs? A Negative Result},
-  author = {[Author Name]},
-  year   = {2026},
-  note   = {Preprint},
-  url    = {[paper link to be added]}
-}
-```
+A paper describing this work is in preparation. Citation details will be added here once available — check back, or open an issue if you'd like to be notified.
 
 ## License
 
@@ -126,5 +115,4 @@ If you use this pipeline or dataset, please cite:
 
 ## Contact
 
-gunjal1gupta@gmail.com
-
+Author - Gunjal Gupta, Vidhi Shah, Nikita Goyal | Gunjal1gupta@gmail.com
