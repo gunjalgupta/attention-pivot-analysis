@@ -126,4 +126,5 @@ If you use this pipeline or dataset, please cite:
 
 ## Contact
 
-[Author name / email — to be added]
+gunjal1gupta@gmail.com
+
