@@ -1,0 +1,345 @@
+source_idx,key,prompt_id,sample_idx,label,prompt_tokens_raw,prompt_tokens_used,prompt_was_truncated,completion_tokens_reencoded,completion_tokens_recorded,completion_length_matches_record,pivot_completion_idx,pivot_full_idx,pivot_valid,query_token_ids_exact,prompt_keys_in_250_window,completion_keys_in_250_window,pivot_neighborhood
+0,mis_03#8,mis_03,8,hallucination_pivot,177,177,False,390,390,True,282,459,True,True,0,250," handle everything alone?
+   - Actually, this ambiguity leaves room for both scenarios;"
+1,mis_04#10,mis_04,10,correction,179,179,False,400,400,True,146,325,True,True,104,146,"-checking my initial thinking:
+Actually, I'm not sure whether this logic holds"
+2,mis_06#2,mis_06,2,hallucination_pivot,178,178,False,111,111,True,52,230,True,True,178,52," 4 = 6
+
+Wait, actually, my initial thought was incorrect!"
+3,mis_06#3,mis_06,3,hallucination_pivot,178,178,False,272,272,True,103,281,True,True,147,103," left with 6 oranges.
+
+Wait, actually, there seems to be an error"
+4,mis_06#11,mis_06,11,hallucination_pivot,178,178,False,293,293,True,49,227,True,True,178,49," here and ask myself: ""Wait, is this actually right?""
+
+Actually, the"
+5,mis_06#13,mis_06,13,correction,178,178,False,325,325,True,64,242,True,True,178,64," of the numbers involved. Oh wait, I realized! We started with a full"
+6,mis_06#14,mis_06,14,hallucination_pivot,178,178,False,278,278,True,35,213,True,True,178,35,"using to check my work:
+Wait, actually, I'm not sure about that"
+7,mis_07#7,mis_07,7,correction,175,175,False,256,256,True,74,249,True,True,175,74,"3 = 7\).
+
+Wait, actually, my initial calculation seems incorrect."
+8,mis_07#14,mis_07,14,correction,175,175,False,189,189,True,105,280,True,True,145,105," to check for any errors.
+Wait, oh no! I mistakenly subtracted instead"
+9,mis_08#0,mis_08,0,hallucination_pivot,187,187,False,246,246,True,135,322,True,True,115,135," illumination without needing physical proximity.
+Wait, Actually, Hmm, Let Me Reconsider"
+10,mis_08#3,mis_08,3,hallucination_pivot,187,187,False,320,320,True,191,378,True,True,59,191,"Wait**, **actually**, **let me reconsider,** **the oil lamp could be"
+11,mis_10#9,mis_10,9,correction,177,177,False,207,207,True,90,267,True,True,160,90,"-way and asking for verification: Wait, I'm not sure if every month has"
+12,mis_10#11,mis_10,11,correction,177,177,False,338,338,True,102,279,True,True,148,102," me pause here and reflect: Wait, actually, this might confuse people who think"
+13,mis_10#12,mis_10,12,hallucination_pivot,177,177,False,334,334,True,88,265,True,True,162,88," or need to rethink anything. Hmm, yes, I see that there could be"
+14,mis_10#14,mis_10,14,correction,177,177,False,362,362,True,239,416,True,True,11,239,"28 days.
+5. Wait, hold up, actually, my earlier reasoning"
+15,math_05#2,math_05,2,hallucination_pivot,184,184,False,400,400,True,164,348,True,True,86,164,"50% as claimed.
+
+Wait, actually that seems wrong again. I should"
+16,math_10#1,math_10,1,hallucination_pivot,184,184,False,257,257,True,161,345,True,True,89,161,"Pausing and Asking Questions:** Wait, Actually, isn’t there a misunderstanding here"
+17,math_10#4,math_10,4,hallucination_pivot,184,184,False,201,201,True,83,267,True,True,167,83," two for any given flip.
+
+Wait, actually, my initial assumption seems flawed—"
+18,math_11#8,math_11,8,hallucination_pivot,175,175,False,400,400,True,245,420,True,True,5,245," movement of the minute hand. Actually, the correct calculation should be based on the"
+19,math_12#1,math_12,1,hallucination_pivot,178,178,False,400,400,True,355,533,True,True,0,250," to 100.
+
+Wait, actually, my initial calculation was correct but"
+20,math_14#7,math_14,7,hallucination_pivot,180,180,False,400,400,True,137,317,True,True,113,137," minute (6 minutes total).
+
+Wait, actually, that seems too simple! There"
+21,math_14#10,math_14,10,hallucination_pivot,180,180,False,400,400,True,302,482,True,True,0,250," our logic holds.
+
+Wait! Actually, I realized my mistake earlier. The correct"
+22,math_16#1,math_16,1,hallucination_pivot,183,183,False,400,400,True,202,385,True,True,48,202," my assumptions might be flawed.
+
+Hmm, I think I've got it right now"
+23,math_16#2,math_16,2,hallucination_pivot,183,183,False,400,400,True,265,448,True,True,0,250,"8 feet up the wall.
+
+Wait, actually, there seems to be a mistake"
+24,math_16#8,math_16,8,hallucination_pivot,183,183,False,400,400,True,308,491,True,True,0,250," ""Is this actually correct?""
+
+Wait, actually that didn’t quite make sense—"
+25,math_16#13,math_16,13,hallucination_pivot,183,183,False,400,400,True,295,478,True,True,0,250,"8 feet up the wall.
+Wait, actually that seems too low! Let me"
+26,math_17#2,math_17,2,hallucination_pivot,172,172,False,359,359,True,189,361,True,True,61,189," pause and check my work. Actually, I realized there were more ways to achieve"
+27,math_17#12,math_17,12,hallucination_pivot,172,172,False,400,400,True,153,325,True,True,97,153," pause here and ask myself: Wait, is this really correct? After all,"
+28,math_18#13,math_18,13,hallucination_pivot,175,175,False,249,249,True,118,293,True,True,132,118," for $10. 
+
+Wait, actually, my initial calculation seems incorrect—"
+29,math_19#2,math_19,2,hallucination_pivot,176,176,False,222,222,True,46,222,True,True,176,46," along and asking myself, ""Wait, is this actually right?""
+
+First, let"
+30,math_19#4,math_19,4,hallucination_pivot,176,176,False,400,400,True,147,323,True,True,103,147,"64 \) squares.
+
+Wait, actually, I'm not sure yet!"
+31,math_20#0,math_20,0,hallucination_pivot,176,176,False,400,400,True,203,379,True,True,47,203," palindromes**.
+
+Wait, actually, my previous reasoning had an oversight"
+32,math_22#5,math_22,5,hallucination_pivot,173,173,False,400,400,True,231,404,True,True,19,231,"3.5**. 
+
+Wait, actually, my previous response had a mistake"
+33,math_23#0,math_23,0,hallucination_pivot,175,175,False,400,400,True,260,435,True,True,0,250," 62.5%.
+
+Wait, actually that still seems incorrect—let me"
+34,math_23#1,math_23,1,hallucination_pivot,175,175,False,400,400,True,227,402,True,True,23,227,": Revisit the Process
+Wait, actually, there seems to be a misunderstanding"
+35,math_23#2,math_23,2,hallucination_pivot,175,175,False,400,400,True,190,365,True,True,60,190,"% of the pizza remains.
+
+Wait, actually that doesn’t seem right—let"
+36,math_23#7,math_23,7,hallucination_pivot,175,175,False,400,400,True,192,367,True,True,58,192,".5\% \]
+
+Wait, let me reconsider. Initially, I thought"
+37,math_23#8,math_23,8,hallucination_pivot,175,175,False,377,377,True,168,343,True,True,82,168,"2.5\%\).
+
+Wait, actually that calculation seems off—let me"
+38,math_23#14,math_23,14,hallucination_pivot,175,175,False,400,400,True,247,422,True,True,3,247," 62.5%.
+
+Wait, actually that doesn't seem right — let"
+39,math_24#1,math_24,1,hallucination_pivot,175,175,False,400,400,True,301,476,True,True,0,250," Pause mid-way and ask ""Wait, is this actually right?""
+My initial calculation"
+40,math_26#0,math_26,0,hallucination_pivot,184,184,False,400,400,True,350,534,True,True,0,250,": Doubtful Answer
+Wait, that doesn’t make sense! This seems"
+41,math_27#2,math_27,2,hallucination_pivot,181,181,False,400,400,True,215,396,True,True,35,215,"t Explicitly:**
+
+   Wait, actually, I realized there might be confusion"
+42,math_29#8,math_29,8,hallucination_pivot,175,175,False,400,400,True,205,380,True,True,45,205," is not a right triangle.
+
+Wait, actually I made an error in my previous"
+43,math_29#9,math_29,9,hallucination_pivot,175,175,False,400,400,True,249,424,True,True,1,249," the final answer.
+
+Wait! Actually, I made an arithmetic error earlier. Let"
+44,math_30#7,math_30,7,hallucination_pivot,187,187,False,348,348,True,142,329,True,True,108,142,"0.
+
+Double-checking: Actually, I might have been too hasty in"
+45,math_37#1,math_37,1,correction,180,180,False,400,400,True,325,505,True,True,0,250," Initial Mistake**:
+   Wait, actually, upon closer inspection, the cut"
+46,math_37#11,math_37,11,hallucination_pivot,180,180,False,392,392,True,224,404,True,True,26,224," Midway and Ask: ""Wait, is This Actually Right?""**
+   Yes"
+47,math_37#13,math_37,13,correction,180,180,False,284,284,True,149,329,True,True,101,149," complexities once carefully analyzed.
+
+**Wait, actually, hold on!**
+
+The key"
+48,math_37#14,math_37,14,correction,180,180,False,314,314,True,179,359,True,True,71,179," Explicitly**:
+   Oh wait, my initial reaction was incorrect; the cut"
+49,math_38#6,math_38,6,hallucination_pivot,188,188,False,340,340,True,194,382,True,True,56,194,"; they are equivalent. 
+
+Wait, actually, that doesn't feel quite right"
+50,math_39#11,math_39,11,hallucination_pivot,188,188,False,400,400,True,342,530,True,True,0,250," $1.10.
+
+Wait, my calculations show that the final price does"
+51,logic_01#2,logic_01,2,correction,197,197,False,400,400,True,276,473,True,True,0,250," Mid-way and Ask:** ""Wait, is this actually correct?"" 
+
+   Yes"
+52,logic_01#7,logic_01,7,hallucination_pivot,197,197,False,400,400,True,271,468,True,True,0,250," ""Is this actually right?""
+Actually, no — this analysis does not account for"
+53,logic_02#3,logic_02,3,correction,192,192,False,400,400,True,190,382,True,True,60,190," Mid-Way:**
+   Wait, is this actually right? 
+
+4."
+54,logic_03#10,logic_03,10,hallucination_pivot,178,178,False,228,228,True,89,267,True,True,161,89," books and farming equipment. 
+
+Wait, Actually, it seems more likely that Mark"
+55,logic_04#2,logic_04,2,hallucination_pivot,176,176,False,400,400,True,360,536,True,True,0,250," a fifty-four-cent coin.
+
+Wait, actually that didn't quite work out correctly"
+56,logic_09#3,logic_09,3,hallucination_pivot,188,188,False,275,275,True,64,252,True,True,186,64,"1 = $99. Wait, actually that doesn't seem right — let"
+57,logic_09#11,logic_09,11,hallucination_pivot,188,188,False,143,143,True,62,250,True,True,188,62," dead in a closed space.
+Wait, actually, let me consider this more carefully"
+58,logic_10#6,logic_10,6,hallucination_pivot,186,186,False,400,400,True,378,564,True,True,0,250,", weigh C against F.
+
+Wait—this doesn’t align exactly with the previous"
+59,logic_10#9,logic_10,9,hallucination_pivot,186,186,False,380,380,True,178,364,True,True,72,178," me pause here and reconsider.
+
+Wait, actually, there's another possibility that needs"
+60,logic_11#5,logic_11,5,hallucination_pivot,205,205,False,400,400,True,282,487,True,True,0,250," this assumption with explicit questioning. Wait, should I really believe that? Could there"
+61,logic_11#12,logic_11,12,hallucination_pivot,205,205,False,400,400,True,324,529,True,True,0,250,"'s confirm the result explicitly:
+
+Wait, actually, no. During his ascent,"
+62,logic_12#0,logic_12,0,hallucination_pivot,189,189,False,400,400,True,145,334,True,True,105,145," more before the sixth flip.
+
+Wait, Actually! That sounds too good to be"
+63,logic_12#4,logic_12,4,hallucination_pivot,189,189,False,400,400,True,199,388,True,True,51,199," Pause Midway and Ask ""Wait, is This Actually Right?""
+Wait, actually"
+64,logic_13#1,logic_13,1,hallucination_pivot,186,186,False,400,400,True,380,566,True,True,0,250," Mid-Way and Ask ""Wait, Is This Actually Right?""
+
+To ensure we"
+65,logic_15#1,logic_15,1,correction,204,204,False,107,107,True,46,250,True,True,204,46," should I phrase it? 
+Hmm, let me rethink. How about asking the"
+66,logic_15#7,logic_15,7,hallucination_pivot,204,204,False,240,240,True,117,321,True,True,133,117," is lying.
+
+**Response**: Wait, I'm not sure how to proceed from"
+67,logic_15#9,logic_15,9,hallucination_pivot,204,204,False,162,162,True,66,270,True,True,184,66," lying guard would say). 
+
+Wait, actually, that's not quite correct either"
+68,logic_15#10,logic_15,10,hallucination_pivot,204,204,False,200,200,True,52,256,True,True,198,52," would he point to?"" 
+
+Wait, actually that seems too complex. Maybe a"
+69,logic_15#12,logic_15,12,hallucination_pivot,204,204,False,398,398,True,194,398,True,True,56,194,"-Way and Ask: 'Wait, is this Actually Right?'**
+   It"
+70,logic_15#13,logic_15,13,hallucination_pivot,204,204,False,400,400,True,39,243,True,True,204,39," what would he say?"" 
+
+Wait, actually, that's not quite right."
+71,logic_16#10,logic_16,10,hallucination_pivot,200,200,False,400,400,True,133,333,True,True,117,133,"Pausing and asking: ""Wait, actually that doesn’t seem right—let"
+72,logic_18#8,logic_18,8,hallucination_pivot,185,185,False,400,400,True,248,433,True,True,2,248," 20 years old.
+
+Wait, actually that seems too easy! Let me"
+73,logic_19#10,logic_19,10,correction,190,190,False,399,399,True,223,413,True,True,27,223," 5-gallon jug.
+
+Wait, Actually, Wait!
+
+It seems I overlooked"
+74,logic_19#14,logic_19,14,hallucination_pivot,190,190,False,400,400,True,281,471,True,True,0,250,": Pausing and Asking ""Wait, is This Actually Right?""
+Wait, actually"
+75,mis2_01#13,mis2_01,13,hallucination_pivot,178,178,False,230,230,True,129,307,True,True,121,129," and asking for feedback.
+
+""Wait, is this actually right?"" 
+
+To verify"
+76,mis2_02#0,mis2_02,0,hallucination_pivot,176,176,False,400,400,True,229,405,True,True,21,229," to reconsider.
+
+Therefore, **let me reconsider**, given the ambiguity in distributing the"
+77,mis2_02#1,mis2_02,1,hallucination_pivot,176,176,False,312,312,True,104,280,True,True,146,104," or details I'm missing.
+
+Wait, is this actually right?
+Hmm, let"
+78,mis2_02#3,mis2_02,3,hallucination_pivot,176,176,False,190,190,True,97,273,True,True,153,97," be fully confident yet:
+
+""Actually, I just realized that since I didn't"
+79,mis2_02#10,mis2_02,10,hallucination_pivot,176,176,False,343,343,True,144,320,True,True,106,144,"Reflecting on this thought:
+Hmm, let me reconsider,
+
+Correcting myself explicitly"
+80,mis2_02#14,mis2_02,14,hallucination_pivot,176,176,False,200,200,True,83,259,True,True,167,83," be left with me? 
+
+Wait, is this actually right? Hmm, let"
+81,mis2_04#0,mis2_04,0,correction,176,176,False,393,393,True,81,257,True,True,169,81," described.
+
+""I'm thinking... Wait, did I miss anything important?"" 
+
+After"
+82,mis2_04#2,mis2_04,2,correction,176,176,False,210,210,True,78,254,True,True,172,78," be 5 fish left.
+
+Wait, let me review this process carefully.
+
+First"
+83,mis2_04#4,mis2_04,4,hallucination_pivot,176,176,False,318,318,True,91,267,True,True,159,91,"'s pause here and think: Wait, is this actually correct? The question asks"
+84,mis2_04#6,mis2_04,6,correction,176,176,False,400,400,True,84,260,True,True,166,84," pause and check my work:
+
+Wait, does drowning represent a real loss of life"
+85,mis2_04#10,mis2_04,10,hallucination_pivot,176,176,False,326,326,True,110,286,True,True,140,110," increased focus on ensuring accuracy.
+
+Hmm, let me rethink this a bit more carefully"
+86,mis2_04#11,mis2_04,11,hallucination_pivot,176,176,False,400,400,True,97,273,True,True,153,97," my logic seems correct now.
+
+""Hmm, let me reconsider,"" I'll pause"
+87,mis2_04#14,mis2_04,14,hallucination_pivot,176,176,False,286,286,True,111,287,True,True,139,111," correctly by asking myself:
+
+- Wait, did I correctly identify that all 3"
+88,mis2_05#0,mis2_05,0,hallucination_pivot,180,180,False,359,359,True,99,279,True,True,151,99," here and ask myself: ""Wait, is this actually correct?"" 
+
+Let's"
+89,mis2_05#5,mis2_05,5,hallucination_pivot,180,180,False,310,310,True,125,305,True,True,125,125," 20 \]
+
+But wait, I should also include the books that were"
+90,mis2_05#11,mis2_05,11,hallucination_pivot,180,180,False,293,293,True,244,424,True,True,6,244," day, I might say: Hmm, Wait, does this make sense? Indeed"
+91,mis2_06#5,mis2_06,5,hallucination_pivot,190,190,False,233,233,True,67,257,True,True,183,67," there's any mistake. 
+
+Actually, I should consider if there could be any"
+92,mis2_07#3,mis2_07,3,hallucination_pivot,182,182,False,400,400,True,271,453,True,True,0,250," Midway and Ask**: ""Wait, is this actually right?""
+
+   Upon pa"
+93,mis2_07#9,mis2_07,9,correction,182,182,False,332,332,True,278,460,True,True,0,250," terms while acknowledging uncertainty:
+
+""Wait, is this actually right?""
+""Hmm,"
+94,mis2_08#8,mis2_08,8,hallucination_pivot,173,173,False,400,400,True,243,416,True,True,7,243,"   - Actually,
+   - Hmm, let me reconsider, 
+   - Oh"
+95,mis2_08#11,mis2_08,11,hallucination_pivot,173,173,False,217,217,True,199,372,True,True,51,199," depends.""
+
+**Final Answer**: Wait, Is This Actually Right? Hmm, Let"
+96,mis2_08#13,mis2_08,13,hallucination_pivot,173,173,False,285,285,True,145,318,True,True,105,145," attempts.""
+
+Double-check: ""Hmm, let me reconsider,""
+
+Correct self-answer"
+97,mis2_09#1,mis2_09,1,hallucination_pivot,176,176,False,267,267,True,60,236,True,True,176,60," Is this actually correct? Oh wait, I think I need to consider my actions"
+98,mis2_09#2,mis2_09,2,hallucination_pivot,176,176,False,346,346,True,259,435,True,True,0,250," pause and realizing earlier mistake:
+
+""Hmm, wait, I realize my previous calculation"
+99,mis2_09#3,mis2_09,3,hallucination_pivot,176,176,False,227,227,True,117,293,True,True,133,117,"considering**:
+   - Actually, we can’t really “lose” all"
+100,mis2_09#4,mis2_09,4,hallucination_pivot,176,176,False,251,251,True,146,322,True,True,104,146," and re-evaluate:
+- Actually, the statement says ""lose all except"","
+101,mis2_09#5,mis2_09,5,correction,176,176,False,400,400,True,119,295,True,True,131,119,"22.5 \)
+
+Wait, is this actually right?
+The calculation seems"
+102,mis2_09#7,mis2_09,7,hallucination_pivot,176,176,False,371,371,True,233,409,True,True,17,233," doubts, I would say: Wait, before concluding any number remains, let's"
+103,mis2_09#11,mis2_09,11,correction,176,176,False,287,287,True,50,226,True,True,176,50," subtract those that were lost.
+
+Wait, is this actually right?
+Actually, no"
+104,mis2_10#8,mis2_10,8,hallucination_pivot,180,180,False,274,274,True,133,313,True,True,117,133," 36 good apples.
+
+Wait, is this actually right?
+
+Hmm, let"
+105,mis2_11#1,mis2_11,1,hallucination_pivot,177,177,False,154,154,True,62,239,True,True,177,62," to any conclusions without checking.
+
+Actually, I should remember that when counting objects,"
+106,mis2_11#2,mis2_11,2,hallucination_pivot,177,177,False,282,282,True,107,284,True,True,143,107," mid-way and ask: ""Wait, is this actually right?""
+
+If I pause"
+107,mis2_11#4,mis2_11,4,hallucination_pivot,177,177,False,190,190,True,111,288,True,True,139,111," with a pause for reflection: Hmm, I need to account for the fact that"
+108,mis2_11#8,mis2_11,8,hallucination_pivot,177,177,False,140,140,True,34,211,True,True,177,34,"Showing my doubt explicitly:
+
+""But hold on a second! Remember that we started with"
+109,mis2_13#11,mis2_13,11,hallucination_pivot,168,168,False,379,379,True,341,509,True,True,0,250, with 30 days. I need to correct my mistake by adding the months
+110,mis2_13#14,mis2_13,14,hallucination_pivot,168,168,False,303,303,True,160,328,True,True,90,160," by pausing and asking ""Wait, is this actually right?""
+
+Actually, my"
+111,mis2_14#2,mis2_14,2,hallucination_pivot,170,170,False,355,355,True,198,368,True,True,52,198,".
+
+Pausing and asking:
+
+Wait, is this actually right?
+
+Third attempt:
+
+"
+112,mis2_14#5,mis2_14,5,hallucination_pivot,170,170,False,244,244,True,100,270,True,True,150,100," pausing mid-sentence:
+Hmm, is it true that Denali was higher"
+113,mis2_15#2,mis2_15,2,hallucination_pivot,183,183,False,400,400,True,129,312,True,True,121,129," Midway and Ask: 'Wait, is this Actually Right?'** 
+   
+"
+114,mis2_15#6,mis2_15,6,hallucination_pivot,183,183,False,329,329,True,204,387,True,True,46,204," myself based on these observations:
+Actually, the key point here seems to be about"
+115,mis2_15#9,mis2_15,9,hallucination_pivot,183,183,False,293,293,True,122,305,True,True,128,122,"Pausing and Asking**: ""Wait, is this actually correct?""
+   
+4."
+116,mis2_15#13,mis2_15,13,hallucination_pivot,183,183,False,385,385,True,128,311,True,True,122,128,"ay**:
+   - ""Wait, is this actually right?""
+
+4. **"
+117,mis2_16#0,mis2_16,0,correction,180,180,False,179,179,True,48,228,True,True,180,48," consider our question carefully:
+
+**Wait, is this actually right?**
+
+The statement"
+118,mis2_16#3,mis2_16,3,hallucination_pivot,180,180,False,400,400,True,242,422,True,True,8,242," correctly with the information given.
+
+Wait, oh! My earlier assumption may not fully"
+119,mis2_16#5,mis2_16,5,hallucination_pivot,180,180,False,110,110,True,79,259,True,True,171,79," by acknowledging the oversight: ""Wait, I must've miscounted. Actually"
+120,mis2_16#7,mis2_16,7,hallucination_pivot,180,180,False,299,299,True,67,247,True,True,180,67,"'s pause here and ask ""Wait, is this actually correct?"" I'm committing"
+121,mis2_16#13,mis2_16,13,hallucination_pivot,180,180,False,237,237,True,85,265,True,True,165,85," any errors in this conclusion.
+Wait, should we not subtract from the original number"
+122,mis2_17#0,mis2_17,0,hallucination_pivot,174,174,False,154,154,True,118,292,True,True,132,118," my explicit acknowledgment would be:
+
+Wait, technically speaking, it could vary depending on"
+123,mis2_17#1,mis2_17,1,hallucination_pivot,174,174,False,194,194,True,131,305,True,True,119,131,"3 - 2 = ? Wait, no, I made a mistake earlier."
+124,mis2_17#3,mis2_17,3,hallucination_pivot,174,174,False,228,228,True,106,280,True,True,144,106,"Actually,** **Hmm**, **I made an error**, **Oh wait**
+
+Reflect"
+125,mis2_17#11,mis2_17,11,hallucination_pivot,174,174,False,190,190,True,49,223,True,True,174,49,"-process and ask ourselves: ""Wait, is this actually correct?""
+
+Actually, it"
+126,mis2_18#0,mis2_18,0,correction,177,177,False,323,323,True,226,403,True,True,24,226," there’s one mistake here! Let me reconsider how much was actually broken."" 
+
+"

@@ -1,0 +1,29 @@
+{
+  "study_condition": "reconstructed_full_context",
+  "model_name": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_dtype": "torch.float16",
+  "model_revision_pinned_in_original_study": false,
+  "tokenizer_commit_observed_now": null,
+  "python_version": "3.12.13",
+  "torch_version": "2.10.0+cu128",
+  "transformers_version": "5.16.1",
+  "transformer_lens_version": "3.8.0",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "system_prompt_sha256": "9e2c38df8555d77e4ef01c80a08fbb15adc639ac792d7e8edf37fd3b73588d70",
+  "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+  "phase2_path": "/kaggle/input/notebooks/gunjalgupta/phase-2/pivot_research/phase2_labeled_combined.jsonl",
+  "n_phase2_records": 155,
+  "n_requested": 127,
+  "n_extracted": 127,
+  "n_errors": 0,
+  "query_window_size": 30,
+  "max_key_context": 250,
+  "label_counts": {
+    "hallucination_pivot": 105,
+    "correction": 22
+  },
+  "prompt_truncation_count": 0,
+  "completion_length_mismatch_count": 0,
+  "elapsed_minutes": 6.619097499052684,
+  "reconstruction_note": "Prompt token IDs were reconstructed from the archived system/user text and current checkpoint chat template. Completion token IDs were re-encoded from archived generated_text because original generation token IDs were not saved."
+}

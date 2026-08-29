@@ -1,0 +1,27 @@
+{
+  "n_records": 127,
+  "h1": {
+    "n_sig": 0,
+    "best_adj_p": 0.41488172043010746
+  },
+  "h2": {
+    "n_sig": 0,
+    "best_adj_p": 0.448
+  },
+  "h3": {
+    "definition": "structural_normalized_entropy",
+    "n_sig": 0,
+    "best_raw_p": 0.002,
+    "best_adj_p": 0.47600000000000003,
+    "raw_p_below_05_rate": 0.10119047619047619
+  },
+  "h4": {
+    "p_value": 0.305,
+    "diff": 0.03360748291015625
+  },
+  "classifier": {
+    "balanced_accuracy": 0.5136363636363637,
+    "f1": 0.20833333333333334,
+    "roc_auc": 0.5787878787878787
+  }
+}

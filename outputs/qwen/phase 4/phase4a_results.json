@@ -1,0 +1,184 @@
+{
+  "dataset": {
+    "n_records": 75,
+    "n_corrections": 14,
+    "n_hallucination": 61,
+    "n_layers": 28,
+    "n_heads": 12,
+    "query_window_size": 30,
+    "max_key_context": 250
+  },
+  "hypothesis_tests": {
+    "H1_retrospective_spike": {
+      "description": "Genuine corrections show backward attention to problem statement",
+      "n_significant_heads": 0,
+      "top_5_heads": [
+        {
+          "layer": 24,
+          "head": 6,
+          "adj_p": 0.6607999999999999,
+          "effect_size": 0.1224524974822998
+        },
+        {
+          "layer": 19,
+          "head": 10,
+          "adj_p": 0.6607999999999999,
+          "effect_size": 0.10199594497680664
+        },
+        {
+          "layer": 25,
+          "head": 2,
+          "adj_p": 0.6607999999999999,
+          "effect_size": 0.08421415090560913
+        },
+        {
+          "layer": 25,
+          "head": 0,
+          "adj_p": 0.6607999999999999,
+          "effect_size": 0.06679409742355347
+        },
+        {
+          "layer": 24,
+          "head": 11,
+          "adj_p": 0.6607999999999999,
+          "effect_size": 0.11041015386581421
+        }
+      ]
+    },
+    "H2_consistency_activation": {
+      "description": "Specific heads fire stronger before genuine corrections",
+      "n_significant_heads": 0,
+      "top_5_heads": [
+        {
+          "layer": 22,
+          "head": 0,
+          "adj_p": 0.14,
+          "effect_size": -0.9986295700073242
+        },
+        {
+          "layer": 15,
+          "head": 5,
+          "adj_p": 0.14,
+          "effect_size": 0.4004230499267578
+        },
+        {
+          "layer": 13,
+          "head": 10,
+          "adj_p": 0.14,
+          "effect_size": 0.33281612396240234
+        },
+        {
+          "layer": 13,
+          "head": 9,
+          "adj_p": 0.14,
+          "effect_size": 0.33429861068725586
+        },
+        {
+          "layer": 1,
+          "head": 3,
+          "adj_p": 0.14,
+          "effect_size": -0.14877140522003174
+        }
+      ]
+    },
+    "H3_attention_entropy": {
+      "description": "Corrections show more diffuse attention",
+      "n_significant_heads": 0,
+      "top_5_heads": [
+        {
+          "layer": 24,
+          "head": 5,
+          "adj_p": 0.21000000000000002,
+          "effect_size": 0.10238033533096313
+        },
+        {
+          "layer": 22,
+          "head": 4,
+          "adj_p": 0.21000000000000002,
+          "effect_size": 0.05660417675971985
+        },
+        {
+          "layer": 17,
+          "head": 3,
+          "adj_p": 0.21000000000000002,
+          "effect_size": 0.046829819679260254
+        },
+        {
+          "layer": 27,
+          "head": 8,
+          "adj_p": 0.21000000000000002,
+          "effect_size": 0.03226304054260254
+        },
+        {
+          "layer": 14,
+          "head": 9,
+          "adj_p": 0.224,
+          "effect_size": 0.036105990409851074
+        }
+      ]
+    },
+    "H4_fluency_dominance": {
+      "description": "Hallucination pivots show more late-layer dominance",
+      "effect_size": 0.0798497200012207,
+      "p_value": 0.057,
+      "significant": false
+    }
+  },
+  "classifier": {
+    "overall_balanced_accuracy": 0.5720140515222483,
+    "overall_f1": 0.3125,
+    "overall_roc_auc": 0.7201405152224825,
+    "cross_validation": [
+      {
+        "fold": 0,
+        "bal_acc": 0.6730769230769231,
+        "f1": 0.4,
+        "n_corr_test": 2
+      },
+      {
+        "fold": 1,
+        "bal_acc": 0.4166666666666667,
+        "f1": 0.0,
+        "n_corr_test": 3
+      },
+      {
+        "fold": 2,
+        "bal_acc": 0.4583333333333333,
+        "f1": 0.0,
+        "n_corr_test": 3
+      },
+      {
+        "fold": 3,
+        "bal_acc": 0.5,
+        "f1": 0.25,
+        "n_corr_test": 3
+      },
+      {
+        "fold": 4,
+        "bal_acc": 0.8333333333333333,
+        "f1": 0.6,
+        "n_corr_test": 3
+      }
+    ],
+    "cross_category_generalization": {
+      "math": {
+        "n_test": 36,
+        "n_corr_test": 3,
+        "bal_acc": 0.5757575757575758,
+        "auc": 0.707070707070707
+      },
+      "logic": {
+        "n_test": 24,
+        "n_corr_test": 4,
+        "bal_acc": 0.35,
+        "auc": 0.525
+      },
+      "misdirection": {
+        "n_test": 15,
+        "n_corr_test": 7,
+        "bal_acc": 0.5178571428571428,
+        "auc": 0.5535714285714286
+      }
+    }
+  }
+}

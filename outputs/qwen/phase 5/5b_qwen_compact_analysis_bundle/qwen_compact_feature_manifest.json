@@ -1,0 +1,21 @@
+{
+  "condition": "reconstructed_full_context",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_records": 127,
+  "n_features": 1009,
+  "n_prompt_attention_features": 336,
+  "n_corrections": 22,
+  "n_non_corrective": 105,
+  "feature_order": [
+    "H1: 336",
+    "H2: 336",
+    "H3: 336",
+    "H4: 1"
+  ],
+  "h3_definition": "Captured causal-key attention entropy, renormalized within the captured structural key set and divided by log(K_q).",
+  "files": {
+    "qwen_full_context_features.npz": "1b5abdd20c0fa735824968993c132d8f7fd05eb5424564e98ff6cd0273359304",
+    "qwen_full_context_features.csv": "91d715f59828b97ad75eb6baf10e85d0a63a077633462b5d1fd0ec930a2365fd",
+    "qwen_prompt_attention_features.npz": "b84862a41a5b53244c0764e6c230fd4608ad140a9a92b2702ba02059b215a2f7"
+  }
+}
