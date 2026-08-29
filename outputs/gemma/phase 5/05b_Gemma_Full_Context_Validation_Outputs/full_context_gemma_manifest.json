@@ -1,0 +1,27 @@
+{
+  "study_condition": "reconstructed_full_context",
+  "model_name": "google/gemma-2-2b-it",
+  "model_dtype": "torch.bfloat16",
+  "model_revision_pinned_in_original_study": false,
+  "python_version": "3.12.13",
+  "torch_version": "2.10.0+cu128",
+  "transformers_version": "5.0.0",
+  "tokenizer_class": "GemmaTokenizer",
+  "system_prompt_sha256": "22a092752b16fbf226da933564d22a0a2502f66ad4fd99027048c28a6d69bbb7",
+  "chat_template_sha256": "ecd6ae513fe103f0eb62e8ab5bfa8d0fe45c1074fa398b089c93a7e70c15cfd6",
+  "phase2_path": "/kaggle/input/notebooks/gunjalgupta/phase-2-gemma/pivot_research_gemma/phase2_labeled_gemma.jsonl",
+  "n_phase2_records": 108,
+  "n_requested": 76,
+  "n_extracted": 76,
+  "query_window_size": 30,
+  "max_key_context": 250,
+  "feature_count": 625,
+  "label_counts": {
+    "hallucination_pivot": 63,
+    "correction": 13
+  },
+  "prompt_visible_record_count": 76,
+  "prompt_truncation_count": 0,
+  "completion_length_mismatch_count": 0,
+  "reconstruction_note": "Gemma system instructions were folded into the user message, matching the archived generation notebook. Original generated token IDs were not saved, so completion IDs were re-encoded from archived generated_text."
+}

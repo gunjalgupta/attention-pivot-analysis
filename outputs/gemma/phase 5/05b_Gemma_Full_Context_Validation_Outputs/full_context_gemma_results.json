@@ -1,0 +1,94 @@
+{
+  "condition": "reconstructed_full_context",
+  "n_records": 76,
+  "n_corrections": 13,
+  "n_hallucination_pivots": 63,
+  "feature_shape": [
+    76,
+    625
+  ],
+  "classifier": {
+    "pipeline": "StandardScaler + class-balanced L2 logistic regression",
+    "C": 0.01,
+    "seed": 42,
+    "instance": {
+      "auc": 0.5470085470085471,
+      "balanced_accuracy": 0.48473748473748474,
+      "f1_correction": 0.24
+    },
+    "grouped": {
+      "auc": 0.6556776556776558,
+      "balanced_accuracy": 0.6239316239316239,
+      "f1_correction": 0.36
+    }
+  },
+  "hypothesis_tests": {
+    "H1": {
+      "n_fdr_significant": 0,
+      "best_raw_p": 0.010994502748625687,
+      "best_adjusted_p": 0.36842338324508633,
+      "best_feature": "H1_L18_H05"
+    },
+    "H2": {
+      "n_fdr_significant": 0,
+      "best_raw_p": 0.0024987506246876563,
+      "best_adjusted_p": 0.49746555293781686,
+      "best_feature": "H2_L04_H00"
+    },
+    "H3": {
+      "n_fdr_significant": 0,
+      "best_raw_p": 0.004997501249375313,
+      "best_adjusted_p": 0.29294443687247285,
+      "best_feature": "H3_L07_H02"
+    },
+    "H4": {
+      "correction_minus_hallucination": -0.007859766483306885,
+      "hallucination_minus_correction": 0.007859766483306885,
+      "p_two_sided": 0.30496950304969506
+    }
+  },
+  "paired_completion_only_comparison": {
+    "completion_only_instance_auc": 0.49938949938949945,
+    "full_context_instance_auc": 0.5470085470085471,
+    "instance_auc_difference": 0.047619047619047616,
+    "completion_only_grouped_auc": 0.63003663003663,
+    "full_context_grouped_auc": 0.6556776556776558,
+    "grouped_auc_difference": 0.025641025641025772,
+    "feature_family_correlations": [
+      {
+        "family": "H1",
+        "n_features": 208,
+        "median_featurewise_r": 0.7292029702060305,
+        "mean_featurewise_r": 0.7054231698989976,
+        "entrywise_r": 0.549717743844829
+      },
+      {
+        "family": "H2",
+        "n_features": 208,
+        "median_featurewise_r": 0.3696155557842754,
+        "mean_featurewise_r": 0.37040823089175995,
+        "entrywise_r": 0.6771675602323539
+      },
+      {
+        "family": "H3",
+        "n_features": 208,
+        "median_featurewise_r": 0.5033820951176506,
+        "mean_featurewise_r": 0.47158864638888365,
+        "entrywise_r": 0.7458236175637478
+      },
+      {
+        "family": "H4",
+        "n_features": 1,
+        "median_featurewise_r": 0.2029848957486657,
+        "mean_featurewise_r": 0.2029848957486657,
+        "entrywise_r": 0.2029848957486657
+      }
+    ]
+  },
+  "outputs": {
+    "features": "/kaggle/working/full_context_gemma/phase4_gemma_full_context_features.npz",
+    "records": "/kaggle/working/full_context_gemma/phase4_gemma_full_context_records.jsonl",
+    "manifest": "/kaggle/working/full_context_gemma/full_context_gemma_manifest.json",
+    "comparison_csv": "/kaggle/working/full_context_gemma/full_context_vs_completion_only_comparison.csv"
+  }
+}

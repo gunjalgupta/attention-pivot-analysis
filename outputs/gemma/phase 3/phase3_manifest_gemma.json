@@ -1,0 +1,31 @@
+{
+  "model_name": "google/gemma-2-2b-it",
+  "dtype": "torch.bfloat16",
+  "transformer_lens_version": "3.7.1",
+  "torch_version": "2.10.0+cu128",
+  "query_window_size": 30,
+  "max_key_context": 250,
+  "n_layers": 26,
+  "n_heads": 8,
+  "d_head": 256,
+  "d_model": 2304,
+  "phase2_path": "/kaggle/input/notebooks/gunjalgupta/phase-2-gemma/pivot_research_gemma/phase2_labeled_gemma.jsonl",
+  "n_phase2_records": 108,
+  "n_usable_requested": 76,
+  "n_extracted": 76,
+  "n_errors": 0,
+  "label_counts": {
+    "hallucination_pivot": 63,
+    "correction": 13
+  },
+  "category_counts": {
+    "misdirection": 32,
+    "math": 35,
+    "logic": 9
+  },
+  "elapsed_minutes": 3.143079427878062,
+  "storage_format": "one compressed npz per record"
+}
+
+
+

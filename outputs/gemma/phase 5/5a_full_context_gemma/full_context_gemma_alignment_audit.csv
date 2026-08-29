@@ -1,0 +1,186 @@
+source_idx,key,prompt_id,sample_idx,label,prompt_tokens_raw,prompt_tokens_used,prompt_was_truncated,completion_tokens_reencoded,completion_tokens_recorded,completion_length_matches_record,pivot_completion_idx,pivot_full_idx,pivot_valid,query_token_ids_exact,prompt_keys_in_250_window,completion_keys_in_250_window,pivot_neighborhood
+0,mis_04#4,mis_04,4,hallucination_pivot,204,204,False,244,244,True,99,303,True,True,151,99," to double check. 
+
+Wait, what if I take all the pills in"
+1,mis_04#5,mis_04,5,hallucination_pivot,204,204,False,189,189,True,141,345,True,True,109,141," of a solution. 
+
+Wait, 20 minutes is not the same"
+2,mis_06#1,mis_06,1,correction,203,203,False,132,132,True,62,265,True,True,188,62," since I took them.  Wait, that's a reasonable doubt. I"
+3,mis_07#14,mis_07,14,correction,200,200,False,110,110,True,54,254,True,True,196,54,"3 cows remaining. 
+
+Wait, isn't the statement ""all but"
+4,mis_08#2,mis_08,2,hallucination_pivot,212,212,False,210,210,True,135,347,True,True,115,135," some warm heat. 
+
+
+Hmm, the stove will give heat, but it"
+5,mis_08#8,mis_08,8,hallucination_pivot,212,212,False,171,171,True,158,370,True,True,92,158," dark.  
+ 
+ Hmm, and it's easier to carry around"
+6,mis_08#11,mis_08,11,correction,212,212,False,136,136,True,76,288,True,True,174,76," the situation given.
+
+But wait, why do we always assume the oil lamp"
+7,mis_09#0,mis_09,0,hallucination_pivot,210,210,False,200,200,True,125,335,True,True,125,125,"  Is this correct?  Hmm, wait a minute.  I need to"
+8,mis_09#5,mis_09,5,hallucination_pivot,210,210,False,198,198,True,162,372,True,True,88,162,"0.00.  That's not right.  Wait, no"
+9,mis_09#12,mis_09,12,hallucination_pivot,210,210,False,347,347,True,109,319,True,True,141,109,".50.  
+
+
+Wait, wouldn't the racket cost more than"
+10,math_01#7,math_01,7,correction,220,220,False,271,271,True,88,308,True,True,162,88," problem with this approach.
+
+Wait, I haven't considered the time taken"
+11,math_02#2,math_02,2,hallucination_pivot,211,211,False,180,180,True,83,294,True,True,167,83," final price.
+ 
+Wait, I think I need to do some more"
+12,math_03#6,math_03,6,hallucination_pivot,219,219,False,168,168,True,143,362,True,True,107,143, second gain. It seems that I was wrong and my calculation was off when adding
+13,math_03#7,math_03,7,hallucination_pivot,219,219,False,144,144,True,132,351,True,True,118,132," too simple. 
+
+**Hmm, it seems like my assumption was off.**"
+14,math_03#10,math_03,10,hallucination_pivot,219,219,False,150,150,True,135,354,True,True,115,135," $200.  Wait, I just realized that I've made"
+15,math_05#0,math_05,0,hallucination_pivot,210,210,False,191,191,True,182,392,True,True,68,182," 
+
+
+Let me know if I've made a mistake. 
+"
+16,math_09#6,math_09,6,hallucination_pivot,215,215,False,119,119,True,68,283,True,True,182,68,"2 hours.
+But, wait, that's impossible. There is not"
+17,math_09#10,math_09,10,hallucination_pivot,215,215,False,170,170,True,101,316,True,True,149,101," doesn't make sense. Wait, wouldn't the trains collide after traveling"
+18,math_09#14,math_09,14,hallucination_pivot,215,215,False,283,283,True,123,338,True,True,127,123,"00 miles. 
+Wait, a minute.  If they're"
+19,math_14#9,math_14,9,hallucination_pivot,205,205,False,290,290,True,94,299,True,True,156,94," we started both together. But wait, what if it takes longer than 5"
+20,math_14#12,math_14,12,hallucination_pivot,205,205,False,192,192,True,147,352,True,True,103,147," it runs out. 
+
+Hmm, it feels like we've got it"
+21,math_15#3,math_15,3,hallucination_pivot,198,198,False,185,185,True,100,298,True,True,150,100," double check that. 
+
+Hmm, 2 to the 7th power"
+22,math_15#12,math_15,12,hallucination_pivot,198,198,False,195,195,True,71,269,True,True,179,71,"128 layers. But wait, isn't that a huge number?"
+23,math_16#5,math_16,5,hallucination_pivot,208,208,False,316,316,True,212,420,True,True,38,212," 8 feet. 
+
+Wait, this seems too easy. 
+It"
+24,math_19#6,math_19,6,hallucination_pivot,201,201,False,102,102,True,50,251,True,True,200,50," seems reasonable.  
+
+...Wait, chess squares are not a unit of measurement"
+25,math_19#7,math_19,7,hallucination_pivot,201,201,False,236,236,True,102,303,True,True,148,102," 64. 
+
+Wait, I’m assuming each square is one"
+26,math_19#11,math_19,11,hallucination_pivot,201,201,False,168,168,True,61,262,True,True,189,61,"board. 
+ 
+Wait, that seems too simple.  How can"
+27,math_20#12,math_20,12,hallucination_pivot,201,201,False,179,179,True,97,298,True,True,153,97,"1 possible combinations. 
+
+Wait, I should be careful. What if the"
+28,math_23#0,math_23,0,correction,200,200,False,190,190,True,127,327,True,True,123,127,"check to make sure.  Wait, I'm going to make sure it"
+29,math_23#13,math_23,13,hallucination_pivot,200,200,False,200,200,True,141,341,True,True,109,141,"  
+
+This feels wrong. Wait, that wasn't clear enough; "
+30,math_24#10,math_24,10,hallucination_pivot,199,199,False,103,103,True,60,259,True,True,190,60," each other person. 
+
+Hmm, I wonder if this is correct? "
+31,math_25#5,math_25,5,correction,201,201,False,241,241,True,82,283,True,True,168,82," 24. 
+
+Hmm, that's a risky assumption, there"
+32,math_26#8,math_26,8,hallucination_pivot,209,209,False,158,158,True,109,318,True,True,141,109, 120 miles. I need to correct my assumption to reflect that I
+33,math_30#5,math_30,5,hallucination_pivot,212,212,False,193,193,True,165,377,True,True,85,165,"330. 
+
+Wait, that seems correct. This looks like the"
+34,math_30#6,math_30,6,hallucination_pivot,212,212,False,268,268,True,229,441,True,True,21,229," 1331
+
+Wait, something doesn't seem right. The"
+35,math_30#10,math_30,10,hallucination_pivot,212,212,False,219,219,True,189,401,True,True,61,189,"1330 
+
+Wait, something doesn't seem right. $"
+36,math_30#13,math_30,13,hallucination_pivot,212,212,False,400,400,True,120,332,True,True,130,120,"330.  
+
+Wait, that's not quite right.  "
+37,math_31#1,math_31,1,hallucination_pivot,221,221,False,263,263,True,153,374,True,True,97,153,'s a simple sequence. I've made a mistake. The ratios between
+38,math_32#4,math_32,4,hallucination_pivot,222,222,False,261,261,True,49,271,True,True,201,49," on the outside. 
+
+Wait, are we actually counting the whole cube or"
+39,math_32#10,math_32,10,hallucination_pivot,222,222,False,183,183,True,131,353,True,True,119,131," small cubes. 
+
+But wait, this seems too easy. I've"
+40,math_32#12,math_32,12,hallucination_pivot,222,222,False,187,187,True,91,313,True,True,159,91," 4 small cubes, but that's not right. The big cube has"
+41,math_35#5,math_35,5,hallucination_pivot,206,206,False,89,89,True,67,273,True,True,183,67,"0 of the numbers. But wait, that's not the correct answer."
+42,math_36#4,math_36,4,hallucination_pivot,216,216,False,353,353,True,119,335,True,True,131,119," share that day.
+
+
+...Wait, is it truly a probability of someone sharing"
+43,math_37#1,math_37,1,hallucination_pivot,204,204,False,134,134,True,34,238,True,True,204,34," likely answer.  But, wait, I'm starting to think about it"
+44,math_40#10,math_40,10,hallucination_pivot,209,209,False,198,198,True,147,356,True,True,103,147," have the same birthday.
+
+Wait, I just realized that I'm assuming"
+45,logic_04#0,logic_04,0,hallucination_pivot,201,201,False,108,108,True,40,241,True,True,201,40," of 2 coins.
+
+Hmm, let's be sure.  What"
+46,logic_04#3,logic_04,3,hallucination_pivot,201,201,False,148,148,True,90,291,True,True,160,90," 55 cents?  Wait, could there be a quarter and a dime"
+47,logic_07#3,logic_07,3,correction,220,220,False,153,153,True,39,259,True,True,211,39," are labeled wrong.  But wait, what if the ""both"" box actually"
+48,logic_12#3,logic_12,3,hallucination_pivot,214,214,False,168,168,True,62,276,True,True,188,62,"s the simplest explanation.
+
+Wait, wait, I'm going to think"
+49,logic_12#5,logic_12,5,hallucination_pivot,214,214,False,282,282,True,122,336,True,True,128,122,"ll check my reasoning.
+
+Wait, what if I turn off switch #2"
+50,logic_16#10,logic_16,10,hallucination_pivot,225,225,False,195,195,True,104,329,True,True,146,104," getting a white side.
+
+Wait, did I just say that the chance of"
+51,logic_19#1,logic_19,1,hallucination_pivot,216,216,False,143,143,True,91,307,True,True,159,91," remaining 1 gallon.
+
+Wait, wait a minute, I need to make"
+52,logic_19#14,logic_19,14,hallucination_pivot,216,216,False,162,162,True,52,268,True,True,198,52," 4 gallons.  But wait, what if you fill the 5-"
+53,logic_20#3,logic_20,3,hallucination_pivot,206,206,False,213,213,True,131,337,True,True,119,131," to be lethal. 
+
+Wait, the woman is ""holding him underwater"""
+54,mis2_01#3,mis2_01,3,correction,203,203,False,148,148,True,110,313,True,True,140,110,", and I have a feeling I've made a mistake.
+
+
+
+Maybe it"
+55,mis2_01#8,mis2_01,8,hallucination_pivot,203,203,False,177,177,True,111,314,True,True,139,111," double-check.  
+
+
+Hmm, that's a tricky one, I"
+56,mis2_02#10,mis2_02,10,correction,201,201,False,67,67,True,42,243,True,True,201,42," am starting to doubt.  Wait, 5 candies left makes more sense than"
+57,mis2_03#9,mis2_03,9,correction,203,203,False,98,98,True,43,246,True,True,203,43," = 28.   Wait, if we're talking about loaves that"
+58,mis2_03#14,mis2_03,14,hallucination_pivot,203,203,False,81,81,True,58,261,True,True,192,58," 28. 
+
+
+Wait, 40 - 12 is"
+59,mis2_05#2,mis2_05,2,hallucination_pivot,205,205,False,93,93,True,47,252,True,True,203,47,". This seems plausible. But wait, maybe that assumption was wrong.  Perhaps"
+60,mis2_05#8,mis2_05,8,hallucination_pivot,205,205,False,130,130,True,41,246,True,True,205,41," should double-check.  Wait, is it asking how many books are still"
+61,mis2_05#11,mis2_05,11,hallucination_pivot,205,205,False,129,129,True,56,261,True,True,194,56,". That seems right, but wait, what about the wording ""all but "
+62,mis2_07#9,mis2_07,9,correction,207,207,False,206,206,True,138,345,True,True,112,138," the house. 
+
+**Wait, the statement says a bear walks past the"
+63,mis2_08#14,mis2_08,14,hallucination_pivot,197,197,False,115,115,True,49,246,True,True,197,49," Southern Hemisphere**, both.  Wait, hold on, this seems like a trick"
+64,mis2_09#3,mis2_09,3,hallucination_pivot,199,199,False,101,101,True,57,256,True,True,193,57,"9 left.
+ 
+Wait, is that really true? 30"
+65,mis2_09#8,mis2_09,8,correction,199,199,False,101,101,True,59,258,True,True,191,59," with 0 marbles.  Wait, what if it means you lost *all"
+66,mis2_10#12,mis2_10,12,hallucination_pivot,204,204,False,176,176,True,41,245,True,True,204,41," good apples.  
+
+But wait, the question asked how many good apples he"
+67,mis2_11#7,mis2_11,7,hallucination_pivot,202,202,False,92,92,True,35,237,True,True,202,35," have 4 eggs.
+
+Wait, the question asks how many you have,"
+68,mis2_12#7,mis2_12,7,hallucination_pivot,202,202,False,238,238,True,119,321,True,True,131,119,""" at play. 
+
+Hmm, maybe the man is actually at a car"
+69,mis2_13#7,mis2_13,7,hallucination_pivot,193,193,False,264,264,True,169,362,True,True,81,169,"31 days
+
+
+  ...Wait, why am I stuck?
+ 
+"
+70,mis2_13#12,mis2_13,12,hallucination_pivot,193,193,False,131,131,True,100,293,True,True,150,100,".   
+ 
+... Hmm, every month has 31 days."
+71,mis2_14#1,mis2_14,1,hallucination_pivot,195,195,False,168,168,True,55,250,True,True,195,55," double check that though!
+
+Wait, wouldn't Everest have been taller than"
+72,mis2_15#8,mis2_15,8,hallucination_pivot,209,209,False,83,83,True,39,248,True,True,209,39,"-way street.  
+
+Wait, what if the street has been blocked off"
+73,mis2_16#0,mis2_16,0,hallucination_pivot,205,205,False,104,104,True,37,242,True,True,205,37," 7 cows left.  Wait, I'm a bit unsure.  "
+74,mis2_17#0,mis2_17,0,hallucination_pivot,199,199,False,87,87,True,34,233,True,True,199,34,"1 apple left. But, wait, the question is actually asking about how many"
+75,mis2_17#1,mis2_17,1,correction,199,199,False,89,89,True,40,239,True,True,199,40,"'ll check.  But wait, I took away 2. That means"
