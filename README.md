@@ -531,6 +531,12 @@ For now, please cite the repository as:
 
 ---
 
+## Licensing
+
+- Source code and notebooks: MIT License
+- Project-generated datasets and compact research outputs: CC BY 4.0
+- Third-party models, software, and source materials: their original licenses
+
 ## Contact
 
 For questions, reproducibility issues, or extension ideas, open a GitHub issue in this repository.
