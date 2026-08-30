@@ -1,0 +1,51 @@
+review_id,prompt_id,sample_idx,existing_label,existing_label_method,existing_human_verified,existing_label_reason
+RTR_001,mis_08,9,uncertain,corrected_keywords,False,corrected: original GROUND_TRUTH keywords for this prompt_id were stale (prompt text had been revised without updating keywords); correct answer present both sides -- stylistic pivot
+RTR_002,logic_12,5,uncertain,human,True,correct answer present both sides — likely stylistic pivot
+RTR_003,math_30,6,uncertain,human,True,correct answer present both sides — likely stylistic pivot
+RTR_004,mis2_17,6,uncertain,automatic,False,correct answer present both sides — likely stylistic pivot
+RTR_005,mis2_09,1,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_006,mis2_02,1,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_007,mis2_14,5,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_008,mis2_13,14,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_009,mis2_14,2,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_010,math_25,5,uncertain,human,True,correct answer present both sides — likely stylistic pivot
+RTR_011,mis2_06,14,uncertain,automatic,False,correct answer present both sides — likely stylistic pivot
+RTR_012,mis2_02,14,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_013,mis2_09,4,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_014,logic_01,7,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_015,math_29,8,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_016,mis_10,12,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_017,mis_08,2,uncertain,corrected_keywords,False,corrected: original GROUND_TRUTH keywords for this prompt_id were stale (prompt text had been revised without updating keywords); correct answer present both sides -- stylistic pivot
+RTR_018,mis2_09,0,uncertain,automatic,False,correct answer present both sides — likely stylistic pivot
+RTR_019,mis2_02,7,uncertain,automatic,False,correct answer present both sides — likely stylistic pivot
+RTR_020,logic_03,10,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_021,mis2_04,11,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_022,math_03,4,uncertain,corrected_keywords,False,corrected: original GROUND_TRUTH keywords for this prompt_id were stale (prompt text had been revised without updating keywords); correct answer present both sides -- stylistic pivot
+RTR_023,mis2_02,3,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_024,math_38,6,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_025,logic_15,9,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_026,mis2_09,7,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_027,math_23,2,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_028,mis2_09,9,uncertain,automatic,False,correct answer present both sides — likely stylistic pivot
+RTR_029,mis2_03,10,uncertain,automatic,False,correct answer present both sides — likely stylistic pivot
+RTR_030,math_18,13,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_031,mis_06,14,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_032,mis2_11,7,uncertain,automatic,False,correct answer present both sides — likely stylistic pivot
+RTR_033,mis2_02,10,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_034,math_03,12,uncertain,corrected_keywords,False,corrected: original GROUND_TRUTH keywords for this prompt_id were stale (prompt text had been revised without updating keywords); correct answer present both sides -- stylistic pivot
+RTR_035,mis2_11,2,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_036,mis_08,11,uncertain,corrected_keywords,False,corrected: original GROUND_TRUTH keywords for this prompt_id were stale (prompt text had been revised without updating keywords); correct answer present both sides -- stylistic pivot
+RTR_037,math_07,6,uncertain,corrected_keywords,False,corrected: original GROUND_TRUTH keywords for this prompt_id were stale (prompt text had been revised without updating keywords); correct answer present both sides -- stylistic pivot
+RTR_038,math_38,12,uncertain,human,True,correct answer present both sides — likely stylistic pivot
+RTR_039,math_29,9,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_040,mis2_06,5,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_041,mis_01,10,uncertain,human,True,correct answer present both sides — likely stylistic pivot
+RTR_042,math_08,5,uncertain,corrected_keywords,False,corrected: original GROUND_TRUTH keywords for this prompt_id were stale (prompt text had been revised without updating keywords); correct answer present both sides -- stylistic pivot
+RTR_043,math_16,13,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_044,mis2_17,3,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_045,mis_06,11,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_046,mis2_06,10,uncertain,automatic,False,correct answer present both sides — likely stylistic pivot
+RTR_047,mis2_04,10,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_048,mis_04,13,uncertain,human,True,correct answer present both sides — likely stylistic pivot
+RTR_049,math_11,8,hallucination_pivot,human,True,correct answer present both sides — likely stylistic pivot
+RTR_050,math_01,9,uncertain,human,True,correct answer present both sides — likely stylistic pivot

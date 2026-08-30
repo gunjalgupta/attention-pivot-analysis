@@ -1,0 +1,72 @@
+{
+  "analysis": "Average precision for the five primary Qwen validation designs",
+  "model": "Qwen2.5-1.5B-Instruct",
+  "positive_class": "correction",
+  "classifier": {
+    "scaler": "StandardScaler",
+    "model": "LogisticRegression",
+    "class_weight": "balanced",
+    "C": 0.01,
+    "max_iter": 2000,
+    "classifier_random_state": 42
+  },
+  "cv_split_seed": 42,
+  "note": "The no-skill average-precision baseline equals correction prevalence.",
+  "results": [
+    {
+      "evaluation": "Instance-level CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "no_skill_ap_baseline": 0.18666666666666668,
+      "average_precision": 0.4111669647475261,
+      "ap_minus_baseline": 0.22450029808085945,
+      "ap_divided_by_baseline": 2.2026801682903185,
+      "roc_auc": 0.7201405152224825
+    },
+    {
+      "evaluation": "Instance-level CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "no_skill_ap_baseline": 0.1732283464566929,
+      "average_precision": 0.2176555890813583,
+      "ap_minus_baseline": 0.04442724262466538,
+      "ap_divided_by_baseline": 1.2564663551514774,
+      "roc_auc": 0.5787878787878787
+    },
+    {
+      "evaluation": "Prompt-grouped CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "no_skill_ap_baseline": 0.18666666666666668,
+      "average_precision": 0.3534936808442038,
+      "ap_minus_baseline": 0.16682701417753712,
+      "ap_divided_by_baseline": 1.893716147379663,
+      "roc_auc": 0.6791569086651054
+    },
+    {
+      "evaluation": "Prompt-grouped CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "no_skill_ap_baseline": 0.1732283464566929,
+      "average_precision": 0.17445307778060726,
+      "ap_minus_baseline": 0.0012247313239143465,
+      "ap_divided_by_baseline": 1.0070700399153236,
+      "roc_auc": 0.4727272727272727
+    },
+    {
+      "evaluation": "Train n=75, test later n=52",
+      "n_records": 52,
+      "n_corrections": 8,
+      "correction_prevalence": 0.15384615384615385,
+      "no_skill_ap_baseline": 0.15384615384615385,
+      "average_precision": 0.1816536232443442,
+      "ap_minus_baseline": 0.027807469398190343,
+      "ap_divided_by_baseline": 1.1807485510882372,
+      "roc_auc": 0.39204545454545453
+    }
+  ]
+}

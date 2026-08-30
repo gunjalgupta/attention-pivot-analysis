@@ -1,0 +1,118 @@
+{
+  "analysis": "Repeated-seed five-fold prompt-grouped cross-validation",
+  "model": "Qwen2.5-1.5B-Instruct",
+  "n_split_seeds_requested": 30,
+  "split_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "classifier": {
+    "scaler": "StandardScaler",
+    "model": "LogisticRegression",
+    "class_weight": "balanced",
+    "C": 0.01,
+    "max_iter": 2000,
+    "classifier_random_state": 42
+  },
+  "summary": {
+    "n75": {
+      "valid_seeds": 30,
+      "roc_auc": {
+        "mean": 0.7016003122560498,
+        "sd": 0.03655880167369866,
+        "median": 0.7125292740046838,
+        "percentile_2_5": 0.6348946135831383,
+        "percentile_97_5": 0.7608313817330211,
+        "min": 0.607728337236534,
+        "max": 0.7693208430913349,
+        "proportion_above_0_5": 1.0
+      },
+      "balanced_accuracy": {
+        "mean": 0.5667252146760343,
+        "sd": 0.03401018618729168,
+        "median": 0.5667447306791569
+      },
+      "f1": {
+        "mean": 0.31099512555217984,
+        "sd": 0.043942091427449065,
+        "median": 0.3157894736842105
+      },
+      "average_precision": {
+        "mean": 0.38415239829180386,
+        "sd": 0.04697635046467932,
+        "median": 0.3946072041511997
+      }
+    },
+    "n127": {
+      "valid_seeds": 30,
+      "roc_auc": {
+        "mean": 0.5164213564213564,
+        "sd": 0.040631285403535285,
+        "median": 0.5188311688311689,
+        "percentile_2_5": 0.44984848484848483,
+        "percentile_97_5": 0.5958982683982683,
+        "min": 0.4329004329004329,
+        "max": 0.6056277056277056,
+        "proportion_above_0_5": 0.6666666666666666
+      },
+      "balanced_accuracy": {
+        "mean": 0.48119047619047617,
+        "sd": 0.03877159287136349,
+        "median": 0.479004329004329
+      },
+      "f1": {
+        "mean": 0.16320055271144035,
+        "sd": 0.05714857059877087,
+        "median": 0.16163265306122448
+      },
+      "average_precision": {
+        "mean": 0.20356343676366712,
+        "sd": 0.02447311374627111,
+        "median": 0.20414720740049683
+      }
+    }
+  },
+  "seed_42_reproduction": {
+    "n75": {
+      "roc_auc": 0.6791569086651054,
+      "balanced_accuracy": 0.5362997658079625,
+      "f1": 0.25806451612903225,
+      "average_precision": 0.3534936808442038
+    },
+    "n127": {
+      "roc_auc": 0.4727272727272727,
+      "balanced_accuracy": 0.4337662337662338,
+      "f1": 0.13559322033898305,
+      "average_precision": 0.17445307778060726
+    }
+  },
+  "failures": []
+}

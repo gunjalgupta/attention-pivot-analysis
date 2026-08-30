@@ -1,0 +1,314 @@
+{
+  "analysis": "Qwen pre-pivot text and metadata baselines",
+  "positive_class": "correction",
+  "text_scope": "Generated text occurring before the detected pivot phrase",
+  "models": {
+    "metadata_basic": {
+      "categorical": [
+        "category",
+        "pivot_type",
+        "pivot_phrase"
+      ],
+      "numeric": [
+        "pre_pivot_tokens",
+        "total_tokens",
+        "pivot_fraction",
+        "pre_pivot_characters",
+        "pre_pivot_words"
+      ],
+      "includes_prompt_id": false
+    },
+    "metadata_plus_prompt_id": {
+      "categorical": [
+        "category",
+        "pivot_type",
+        "pivot_phrase",
+        "prompt_id"
+      ],
+      "numeric": [
+        "pre_pivot_tokens",
+        "total_tokens",
+        "pivot_fraction",
+        "pre_pivot_characters",
+        "pre_pivot_words"
+      ],
+      "includes_prompt_id": true,
+      "purpose": "Explicit prompt-identity leakage diagnostic"
+    },
+    "text_tfidf": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_features": 5000
+    },
+    "text_plus_metadata": {
+      "text": "Same TF-IDF configuration",
+      "categorical": [
+        "category",
+        "pivot_type",
+        "pivot_phrase"
+      ],
+      "numeric": [
+        "pre_pivot_tokens",
+        "total_tokens",
+        "pivot_fraction",
+        "pre_pivot_characters",
+        "pre_pivot_words"
+      ],
+      "includes_prompt_id": false
+    }
+  },
+  "classifier": {
+    "model": "LogisticRegression",
+    "class_weight": "balanced",
+    "C": 0.01,
+    "max_iter": 3000,
+    "random_state": 42,
+    "hyperparameter_tuning": false
+  },
+  "cv_split_seed": 42,
+  "results": [
+    {
+      "model": "metadata_basic",
+      "evaluation": "Instance-level CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "roc_auc": 0.5725995316159251,
+      "average_precision": 0.22614877091065408,
+      "ap_minus_prevalence": 0.039482104243987404,
+      "balanced_accuracy": 0.5585480093676815,
+      "f1": 0.3076923076923077
+    },
+    {
+      "model": "metadata_basic",
+      "evaluation": "Instance-level CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "roc_auc": 0.4649350649350649,
+      "average_precision": 0.1682121443022181,
+      "ap_minus_prevalence": -0.005016202154474819,
+      "balanced_accuracy": 0.5166666666666666,
+      "f1": 0.2682926829268293
+    },
+    {
+      "model": "metadata_basic",
+      "evaluation": "Prompt-grouped CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "roc_auc": 0.585480093676815,
+      "average_precision": 0.24713482968673997,
+      "ap_minus_prevalence": 0.060468163020073296,
+      "balanced_accuracy": 0.5667447306791569,
+      "f1": 0.3157894736842105
+    },
+    {
+      "model": "metadata_basic",
+      "evaluation": "Prompt-grouped CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "roc_auc": 0.5372294372294372,
+      "average_precision": 0.2242273849193318,
+      "ap_minus_prevalence": 0.050999038462638896,
+      "balanced_accuracy": 0.5346320346320346,
+      "f1": 0.2857142857142857
+    },
+    {
+      "model": "metadata_basic",
+      "evaluation": "Train n=75, test later n=52",
+      "n_records": 52,
+      "n_corrections": 8,
+      "correction_prevalence": 0.15384615384615385,
+      "roc_auc": 0.49147727272727276,
+      "average_precision": 0.23585426634768739,
+      "ap_minus_prevalence": 0.08200811250153353,
+      "balanced_accuracy": 0.5170454545454546,
+      "f1": 0.2692307692307692
+    },
+    {
+      "model": "metadata_plus_prompt_id",
+      "evaluation": "Instance-level CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "roc_auc": 0.5866510538641685,
+      "average_precision": 0.23527973546335315,
+      "ap_minus_prevalence": 0.048613068796686476,
+      "balanced_accuracy": 0.5667447306791569,
+      "f1": 0.3157894736842105
+    },
+    {
+      "model": "metadata_plus_prompt_id",
+      "evaluation": "Instance-level CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "roc_auc": 0.47489177489177486,
+      "average_precision": 0.17154477557483117,
+      "ap_minus_prevalence": -0.0016835708818617456,
+      "balanced_accuracy": 0.47597402597402594,
+      "f1": 0.22784810126582278
+    },
+    {
+      "model": "metadata_plus_prompt_id",
+      "evaluation": "Prompt-grouped CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "roc_auc": 0.5843091334894613,
+      "average_precision": 0.24582271393134691,
+      "ap_minus_prevalence": 0.05915604726468024,
+      "balanced_accuracy": 0.5749414519906323,
+      "f1": 0.32432432432432434
+    },
+    {
+      "model": "metadata_plus_prompt_id",
+      "evaluation": "Prompt-grouped CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "roc_auc": 0.5354978354978355,
+      "average_precision": 0.2238279462922741,
+      "ap_minus_prevalence": 0.05059959983558118,
+      "balanced_accuracy": 0.5261904761904762,
+      "f1": 0.275
+    },
+    {
+      "model": "metadata_plus_prompt_id",
+      "evaluation": "Train n=75, test later n=52",
+      "n_records": 52,
+      "n_corrections": 8,
+      "correction_prevalence": 0.15384615384615385,
+      "roc_auc": 0.49147727272727276,
+      "average_precision": 0.23585426634768739,
+      "ap_minus_prevalence": 0.08200811250153353,
+      "balanced_accuracy": 0.45454545454545453,
+      "f1": 0.23529411764705882
+    },
+    {
+      "model": "text_tfidf",
+      "evaluation": "Instance-level CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "roc_auc": 0.7459016393442622,
+      "average_precision": 0.40477315082578236,
+      "ap_minus_prevalence": 0.21810648415911568,
+      "balanced_accuracy": 0.6018735362997658,
+      "f1": 0.34782608695652173
+    },
+    {
+      "model": "text_tfidf",
+      "evaluation": "Instance-level CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "roc_auc": 0.6012987012987013,
+      "average_precision": 0.24691116242261604,
+      "ap_minus_prevalence": 0.07368281596592313,
+      "balanced_accuracy": 0.5253246753246753,
+      "f1": 0.17647058823529413
+    },
+    {
+      "model": "text_tfidf",
+      "evaluation": "Prompt-grouped CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "roc_auc": 0.639344262295082,
+      "average_precision": 0.39317357981030043,
+      "ap_minus_prevalence": 0.20650691314363376,
+      "balanced_accuracy": 0.5357142857142857,
+      "f1": 0.13333333333333333
+    },
+    {
+      "model": "text_tfidf",
+      "evaluation": "Prompt-grouped CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "roc_auc": 0.4588744588744589,
+      "average_precision": 0.16341233605265532,
+      "ap_minus_prevalence": -0.009816010404037595,
+      "balanced_accuracy": 0.47987012987012984,
+      "f1": 0.0625
+    },
+    {
+      "model": "text_tfidf",
+      "evaluation": "Train n=75, test later n=52",
+      "n_records": 52,
+      "n_corrections": 8,
+      "correction_prevalence": 0.15384615384615385,
+      "roc_auc": 0.32670454545454547,
+      "average_precision": 0.17075367647058823,
+      "ap_minus_prevalence": 0.016907522624434373,
+      "balanced_accuracy": 0.4375,
+      "f1": 0.1
+    },
+    {
+      "model": "text_plus_metadata",
+      "evaluation": "Instance-level CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "roc_auc": 0.5784543325526932,
+      "average_precision": 0.22947747523288686,
+      "ap_minus_prevalence": 0.04281080856622019,
+      "balanced_accuracy": 0.5585480093676815,
+      "f1": 0.3076923076923077
+    },
+    {
+      "model": "text_plus_metadata",
+      "evaluation": "Instance-level CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "roc_auc": 0.4662337662337662,
+      "average_precision": 0.16849513721562853,
+      "ap_minus_prevalence": -0.004733209241064379,
+      "balanced_accuracy": 0.48549783549783554,
+      "f1": 0.23376623376623376
+    },
+    {
+      "model": "text_plus_metadata",
+      "evaluation": "Prompt-grouped CV, n=75",
+      "n_records": 75,
+      "n_corrections": 14,
+      "correction_prevalence": 0.18666666666666668,
+      "roc_auc": 0.5878220140515222,
+      "average_precision": 0.24658235111955554,
+      "ap_minus_prevalence": 0.05991568445288886,
+      "balanced_accuracy": 0.5667447306791569,
+      "f1": 0.3157894736842105
+    },
+    {
+      "model": "text_plus_metadata",
+      "evaluation": "Prompt-grouped CV, n=127",
+      "n_records": 127,
+      "n_corrections": 22,
+      "correction_prevalence": 0.1732283464566929,
+      "roc_auc": 0.5376623376623377,
+      "average_precision": 0.22619893261212376,
+      "ap_minus_prevalence": 0.05297058615543085,
+      "balanced_accuracy": 0.5166666666666666,
+      "f1": 0.2682926829268293
+    },
+    {
+      "model": "text_plus_metadata",
+      "evaluation": "Train n=75, test later n=52",
+      "n_records": 52,
+      "n_corrections": 8,
+      "correction_prevalence": 0.15384615384615385,
+      "roc_auc": 0.49147727272727276,
+      "average_precision": 0.23585426634768739,
+      "ap_minus_prevalence": 0.08200811250153353,
+      "balanced_accuracy": 0.5170454545454546,
+      "f1": 0.2692307692307692
+    }
+  ]
+}

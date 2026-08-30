@@ -429,6 +429,38 @@ checkpoints/
 Do not ignore a file type if a small, essential artifact of that type is intentionally included in the repository.
 
 ---
+# Anonymous supplementary artifact
+
+This review artifact contains sanitized versions of the Qwen and Gemma
+analysis notebooks, manuscript figures, and compact machine-readable
+result summaries.
+
+## Contents
+
+```text
+notebooks/
+  qwen/   Qwen generation, labeling, extraction, and analysis notebooks
+  gemma/  Gemma generation, labeling, extraction, and analysis notebooks
+
+figures/
+  manuscript and appendix figures
+
+results/
+  qwen/
+    qwen_repeated_seed_grouped_cv.csv
+    qwen_repeated_seed_grouped_cv_summary.json
+    qwen_primary_average_precision.csv
+    qwen_primary_average_precision.json
+    qwen_text_metadata_baselines.csv
+    qwen_text_metadata_baselines.json
+    qwen_hallucination_subtype_audit.csv
+    qwen_hallucination_subtype_summary.json
+
+  core_results_summary.json
+  gemma_full_context_feature_correlations.csv
+
+ANONYMIZATION_AUDIT.md
+README.md
 
 ## Reproducibility notes
 
