@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this research or its code, please cite the associated paper."
+title: "Attention Pivot Analysis"
+type: software
+authors:
+  - family-names: "Gupta"
+    given-names: "Gunjal"
+  - family-names: "Nagda"
+    given-names: "Vidhi"
+  - family-names: "Goyal"
+    given-names: "Nikita"
+repository-code: "https://github.com/gunjalgupta/attention-pivot-analysis"
+url: "https://openreview.net/forum?id=hkCS0icTWp"
+preferred-citation:
+  type: conference-paper
+  title: "Internal Stability Is Not Evidence of Replication: Evaluating Attention-Based Self-Correction Signals"
+  authors:
+    - family-names: "Gupta"
+      given-names: "Gunjal"
+    - family-names: "Nagda"
+      given-names: "Vidhi"
+    - family-names: "Goyal"
+      given-names: "Nikita"
+  year: 2026
+  conference:
+    name: "NeurIPS 2026 TAE (Trust-AI-Eval) Workshop"
+  url: "https://openreview.net/forum?id=hkCS0icTWp"

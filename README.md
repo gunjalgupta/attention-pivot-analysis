@@ -1,5 +1,13 @@
 # Attention Pivot Analysis
 
+
+**Accepted Poster — NeurIPS 2026 TAE Workshop**
+
+[Read the Paper (OpenReview)](https://openreview.net/forum?id=hkCS0icTWp)
+
+**Authors:** Gunjal Gupta, Vidhi Nagda, Nikita Goyal
+
+
 **Can a language model's internal attention activations distinguish a genuine self-correction from a hallucinated pivot before the pivot is completed?**
 
 This repository contains a reproducible mechanistic-interpretability case study built around that question. The project began with an encouraging result on a small Qwen sample, then deliberately tested whether it survived:
@@ -429,7 +437,7 @@ checkpoints/
 Do not ignore a file type if a small, essential artifact of that type is intentionally included in the repository.
 
 ---
-# Anonymous supplementary artifact
+# Supplementary Results and Reproducibility Artifacts
 
 This review artifact contains sanitized versions of the Qwen and Gemma
 analysis notebooks, manuscript figures, and compact machine-readable
@@ -513,21 +521,36 @@ The initial result was worth investigating—but not strong enough to treat as a
 
 ---
 
+
 ## Citation
 
-A formal citation will be added when the accompanying paper is publicly available.
+This repository accompanies the following accepted workshop paper:
 
-For now, please cite the repository as:
+**Internal Stability Is Not Evidence of Replication:
+Evaluating Attention-Based Self-Correction Signals**
+
+Gunjal Gupta, Vidhi Nagda, and Nikita Goyal.
+
+Accepted Poster — NeurIPS 2026 Workshop on
+Trust-AI-Eval (TAE), non-archival.
+
+**Paper:** https://openreview.net/forum?id=hkCS0icTWp
+
+If you use this work, please cite:
 
 ```bibtex
-@misc{gupta2026attentionpivot,
-  author       = {Gunjal Gupta},
-  title        = {Attention Pivot Analysis: Testing Pre-Pivot Attention Signals for Genuine Self-Correction},
-  year         = {2026},
-  howpublished = {\url{https://github.com/gunjalgupta/attention-pivot-analysis}},
-  note         = {Code, data-processing pipeline, and reproducibility notebooks}
+@misc{gupta2026internal,
+  title={Internal Stability Is Not Evidence of Replication:
+    Evaluating Attention-Based Self-Correction Signals},
+  author={Gupta, Gunjal and Nagda, Vidhi
+    and Goyal, Nikita},
+  year={2026},
+  note={Accepted poster, NeurIPS 2026
+    TAE Workshop (non-archival)},
+  url={https://openreview.net/forum?id=hkCS0icTWp}
 }
 ```
+
 
 ---
 
